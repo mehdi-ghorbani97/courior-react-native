@@ -355,8 +355,7 @@ console.log(notificationPermission);
 
 // Notification permissions must be `authorized` on iOS to receive pushes
 
-const requestedNotificationPermission =
-  await Courier.requestNotificationPermission();
+const requestedNotificationPermission = await Courier.requestNotificationPermission();
 console.log(requestedNotificationPermission);
 
 // This is how iOS will show the notification when the app is in the foreground
