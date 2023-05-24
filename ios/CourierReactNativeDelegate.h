@@ -1,20 +1,7 @@
-//
-//  CourierReactNativeDelegate.h
-//  courier-react-native
-//
-//  Created by Michael Miller on 10/7/22.
-//
-
+#import <RCTAppDelegate.h>
 #import <UIKit/UIKit.h>
-#import <React/RCTBridgeDelegate.h>
-#import <UserNotifications/UserNotifications.h>
+#import <UserNotifications/UNUserNotificationCenter.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface CourierReactNativeDelegate : UIResponder <UIApplicationDelegate, RCTBridgeDelegate, UNUserNotificationCenterDelegate>
-
-@property (nonatomic, strong) UIWindow *window;
+@interface AppDelegate : RCTAppDelegate <UIApplicationDelegate, RCTBridgeDelegate, UNUserNotificationCenterDelegate>
 
 @end
-
-NS_ASSUME_NONNULL_END
