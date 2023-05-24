@@ -1,7 +1,5 @@
-#import <RCTAppDelegate.h>
 #import <UIKit/UIKit.h>
-#import <UserNotifications/UNUserNotificationCenter.h>
+#import <RCTAppDelegate.h>
+#import <UserNotifications/UserNotifications.h>
 
-@interface AppDelegate : RCTAppDelegate <UIApplicationDelegate, RCTBridgeDelegate, UNUserNotificationCenterDelegate>
-
-@end
+@interface CourierReactNativeDelegate : RCTAppDelegate <UIApplicationDelegate, RCTBridgeDelegate, UNUserNotificationCenterDelegate>
